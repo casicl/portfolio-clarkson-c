@@ -1,15 +1,15 @@
-*{
+/*{
     margin: 50;
     padding: 50;
-}
+    display: flex;
+    flex-direction: column;
+}*/
 /* color palette */
-:root {
 
-}
 
 body {
-    margin: 15, 0, 15, 0;
-    padding: 0;
+    /*margin: 15, 0, 15, 0;
+    padding: 0;*/
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
     background-color: whitesmoke;
@@ -17,10 +17,11 @@ body {
     /* add some colors idk */
 }
 header {
-    padding: 10px 10% 10px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-basis: 600px;
     background-color: lightcyan;
     /* add some colors */
 }
@@ -65,13 +66,31 @@ p {
     flex-direction: row;
     background-color: lightcyan;
 }
-/* } 
+
 .page-section {
-  
+  flex: 0 0 100%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px;
 }
-*/
+
+.flex-container {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: auto;
+    background-color: blueviolet;
+   background-image: url("../assets/IMG_1751.png");
+   height: 200px;
+   width: 300px;
+   margin: 10 10 10 10;
+
+
+}
+
+
+
 #projects {
-height: 200px;
+height: 900px;
 width: 100%;
 margin-bottom: 5px;
 background-position: right;
@@ -79,19 +98,8 @@ background-color: lightsalmon;
 }
 
 .flex-item:hover {
-    background-color:antiquewhite ;
-
-}
-.flex-item:first-child {
-    min-height: 300px;
-    flex-basis: 100%;
+    background-color:antiquewhite;
 }
 
-#project1 {
-    background-image: url("../assets/IMG_1751.png");
-}
-@media screen and (max-width: 980) {
-    body {
-        
-    }
-}
+
+
