@@ -13,6 +13,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
     background-color: whitesmoke;
+    color: darkslategrey;
 
     /* add some colors idk */
 }
@@ -21,25 +22,39 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 600px;
     background-color: lightcyan;
     /* add some colors */
 }
 
 h1 {
-    align-items: right;
-    text-align: right;
+    align-items: center;
+    text-align: center;
 }
 
-nav, h2 {
+img {
+    height: 175px;
+    width: 150px;
+
+}
+nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: left;
-    
+    list-style-type: none;
+    align-items: flex-end;
  
     
+    
 }
+    
+li {
+    margin-right: 10px;
+    font-size: 20px;
+    
+}
+    
+
+
 .hero {
     height: 500px;
     width: 100%;
@@ -61,45 +76,69 @@ nav, h2 {
     background-color: lightcyan;
 }
 p {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: lightcyan;
-}
-
-.page-section {
-  flex: 0 0 100%;
-  text-align: right;
-  padding-right: 15px;
-  border-right: 4px;
-}
-
-.flex-container {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: auto;
-    background-color: blueviolet;
-   background-image: url("../assets/IMG_1751.png");
-   height: 200px;
-   width: 300px;
-   margin: 10 10 10 10;
-
+    text-align: auto;
+    margin: 10px 75px 25px;
+    font-size: 15;
 
 }
-
+ 
 
 
 #projects {
-height: 900px;
-width: 100%;
-margin-bottom: 5px;
-background-position: right;
-background-color: lightsalmon;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: right;
+    padding: 15px;
+    border: 4px;
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-color: lightsalmon;
+    text-align: left;
+    }
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+#project1{
+   
+   background-image: url("../assets/IMG_1751.png");
+   background-color: azure;
+   height: 300px;
+   width: 300px;
+   margin: 20 20 20 20;
+   border: 15px solid whitesmoke;
+   color: white; 
+   }
+
+
+
+ #project2 {
+  
+    background-image: url("../assets/IMG_1428.jpg");
+    background-color: azure;
+    height: 300px;
+    width: 300px;
+    margin: 20;
+    border: 15px solid whitesmoke;
+    color: white;
+    
 }
 
-.flex-item:hover {
-    background-color:antiquewhite;
+.flex-container:hover {
+    transform: translate3d(0,-1px,0) scale(1.05);
+}
+a {
+    margin-right: 10px;
 }
 
+@media only screen and (max-width: 800px) {
+    .page-section {
+        flex-wrap: column;
+        flex-basis: 100%;
+        align-items: center;
+    }
 
 
+}
